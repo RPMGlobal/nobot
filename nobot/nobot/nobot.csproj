@@ -115,12 +115,15 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Dialogs\FAQDialog.cs" />
+    <Compile Include="Dialogs\MainChoiceDialog.cs" />
     <Compile Include="Dialogs\QnaStackOverflowDialog.cs" />
     <Compile Include="Dialogs\RootDialog.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ConversationService.cs" />
     <Compile Include="Services\VstsService.cs" />
   </ItemGroup>
   <ItemGroup>
