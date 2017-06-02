@@ -19,14 +19,15 @@ namespace nobot.Services
         {
             var heroCard = new HeroCard
             {
-                Title = "Technical Questions Bot",
+                Title = "Health Policy Bot",
                 Subtitle = "",
                 Text = "Hi, how may I help you?",
                 Images = new List<CardImage> { new CardImage("https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAjEAAAAJDg0N2NmNjU1LTQ2OTctNDg3Ni1iMjNhLWExZmE0YTg0NDIxOQ.png") },
                 Buttons = new List<CardAction>
                 {
-                    new CardAction(ActionTypes.PostBack, "Yes", value: "Ask a Question"),
-                    new CardAction(ActionTypes.PostBack, "No", value: "No"),
+                    new CardAction(ActionTypes.PostBack, "Create Health Policy", value: "Create a Policy"),
+                    new CardAction(ActionTypes.PostBack, "FAQ", value: "Ask a Question"),
+                    new CardAction(ActionTypes.PostBack, "I am good!", value: "No"),
                 }
             };
 
