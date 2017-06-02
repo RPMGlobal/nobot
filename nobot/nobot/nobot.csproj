@@ -54,6 +54,9 @@
     <Reference Include="Microsoft.Bot.Builder.Autofac, Version=3.8.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bot.Builder.3.8.1.0\lib\net46\Microsoft.Bot.Builder.Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Bot.Builder.CognitiveServices.QnAMaker, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bot.Builder.CognitiveServices.1.1.0\lib\net46\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bot.Connector, Version=3.8.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bot.Builder.3.8.1.0\lib\net46\Microsoft.Bot.Connector.dll</HintPath>
     </Reference>
@@ -112,11 +115,13 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Dialogs\QnaStackOverflowDialog.cs" />
     <Compile Include="Dialogs\RootDialog.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\VstsService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
